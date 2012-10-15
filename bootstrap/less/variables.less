@@ -13,8 +13,10 @@
 @grayDarker:            #222;
 @grayDark:              #333;
 @gray:                  #555;
+@grayMedium:			#777;
 @grayLight:             #999;
 @grayLighter:           #eee;
+@grayLightest:			#FAFBF7;
 @white:                 #fff;
 
 
@@ -32,8 +34,8 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
-@textColor:             @grayDark;
+@bodyBackground:        @grayLightest;
+@textColor:             @grayMedium;
 
 
 // Links
@@ -48,7 +50,7 @@
 @serifFontFamily:       "MuseoSlab500Regular";
 @monoFontFamily:        "MuseoSlab500Regular";
 
-@baseFontSize:          14px;
+@baseFontSize:          18px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
@@ -158,13 +160,13 @@
 // -------------------------
 @navbarCollapseWidth:             979px;
 
-@navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
+@navbarHeight:                    50px;
+@navbarBackgroundHighlight:       @grayLightest;
+@navbarBackground:                @grayLightest;
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
-@navbarText:                      #777;
-@navbarLinkColor:                 #777;
+@navbarText:                      @grayMedium;
+@navbarLinkColor:                 @grayMedium;
 @navbarLinkColorHover:            @grayDark;
 @navbarLinkColorActive:           @gray;
 @navbarLinkBackgroundHover:       transparent;
@@ -173,13 +175,13 @@
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
+@navbarInverseBackground:                @grayLightest;
+@navbarInverseBackgroundHighlight:       @grayLightest;
+@navbarInverseBorder:                    @grayLightest;
 
 @navbarInverseText:                      @grayLight;
 @navbarInverseLinkColor:                 @grayLight;
-@navbarInverseLinkColorHover:            @white;
+@navbarInverseLinkColorHover:            @gray;
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
 @navbarInverseLinkBackgroundHover:       transparent;
 @navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
